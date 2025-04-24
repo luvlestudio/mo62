@@ -101,6 +101,12 @@ window.onload = () => {
     }
   });
 
+  const swiperCloseBtn = document.querySelector('#swiper-close-button');
+  swiperCloseBtn.addEventListener('click', () => {
+    outsideModal.style.display = 'none';
+    documentBody.style.overflow = 'auto';
+  });
+
   const galleryImages = document.querySelectorAll("#gallery img");
   galleryImages.forEach((img, index) => {
     img.onclick = () => {
